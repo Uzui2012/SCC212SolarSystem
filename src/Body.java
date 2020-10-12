@@ -1,12 +1,6 @@
-public class Body
-{
-    private int distance;
-    private int angle;
-    private int diameter;
-    private String colour;
+import java.net.SocketImplFactory;
 
-    public Body(double distance, double angle, double diameter, String col)
-    {
-        
-    }
+public interface Body
+{
+    void Draw();
 }
