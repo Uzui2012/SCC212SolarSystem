@@ -2,5 +2,5 @@ import java.net.SocketImplFactory;
 
 public interface Body
 {
-    void Draw();
+    void Draw(SolarSystem sys);
 }

@@ -1,4 +1,5 @@
-public class Sun implements Body{    
+public class Sun implements Body
+{    
     private int diameter;
     private String colour;
     
@@ -7,11 +8,9 @@ public class Sun implements Body{
         this.colour = colour;
     }
 
-    public void Draw()
-    {
-
+    public void Draw(SolarSystem solSys) {
+        solSys.drawSolarObject(0, 0, this.diameter, this.colour);
     }
-
     
     /** 
      * @return int
@@ -19,7 +18,6 @@ public class Sun implements Body{
     public int getDiameter() {
         return diameter;
     }
-
     
     /** 
      * @param diameter
@@ -27,7 +25,6 @@ public class Sun implements Body{
     public void setDiameter(int diameter) {
         this.diameter = diameter;
     }
-
     
     /** 
      * @return String
@@ -35,7 +32,6 @@ public class Sun implements Body{
     public String getColour() {
         return colour;
     }
-
     
     /** 
      * @param colour
@@ -43,6 +39,4 @@ public class Sun implements Body{
     public void setColour(String colour) {
         this.colour = colour;
     }
-
-    
 }
