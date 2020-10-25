@@ -2,17 +2,20 @@ public class Planet extends Sun
 {
     private int angle;
     private int distance;
-    private int incrementSpeed;
+    private int speed;
 
-    public Planet(int distance, int angle, int diameter, int incrementSpeed, String colour) {
+    public Planet(int distance, int angle, int diameter, int speed, String colour) {
         super(diameter, colour);
         this.angle = angle;
         this.distance = distance;
-        this.incrementSpeed = incrementSpeed;
+        this.speed = speed;
     }
 
+    /**
+     * Increments angle by the preset speed of the object
+     */
     public void incrementAngle() {
-        this.angle = this.angle + this.incrementSpeed;
+        this.angle = this.angle + this.speed;
     }
 
     
