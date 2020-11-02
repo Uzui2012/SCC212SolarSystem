@@ -1,7 +1,7 @@
 public class Moon extends Planet
 {
-    Planet parentPlanet;
-    public Moon(int distance, int angle, int diameter, int incrementSpeed, String colour, Planet parentPlanet) {
+    private Planet parentPlanet;
+    public Moon(double distance, double angle, double diameter, double incrementSpeed, String colour, Planet parentPlanet) {
         super(distance, angle, diameter, incrementSpeed, colour);
         this.parentPlanet = parentPlanet;
     }

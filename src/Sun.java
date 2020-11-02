@@ -1,9 +1,9 @@
 public class Sun implements Body
 {    
-    private int diameter;
+    private double diameter;
     private String colour;
     
-    public Sun(int diameter, String colour) {
+    public Sun(double diameter, String colour) {
         this.diameter = diameter;
         this.colour = colour;
     }
@@ -13,16 +13,16 @@ public class Sun implements Body
     }
     
     /** 
-     * @return int
+     * @return double
      */
-    public int getDiameter() {
+    public double getDiameter() {
         return diameter;
     }
     
     /** 
      * @param diameter
      */
-    public void setDiameter(int diameter) {
+    public void setDiameter(double diameter) {
         this.diameter = diameter;
     }
     

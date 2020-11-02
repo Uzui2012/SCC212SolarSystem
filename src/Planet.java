@@ -1,10 +1,10 @@
 public class Planet extends Sun
 {
-    private int angle;
-    private int distance;
-    private int speed;
+    private double angle;
+    private double distance;
+    private double speed;
 
-    public Planet(int distance, int angle, int diameter, int speed, String colour) {
+    public Planet(double distance, double angle, double diameter, double speed, String colour) {
         super(diameter, colour);
         this.angle = angle;
         this.distance = distance;
@@ -27,9 +27,9 @@ public class Planet extends Sun
     }
     
     /** 
-     * @return int
+     * @return double
      */
-    public int getAngle() {
+    public double getAngle() {
         return angle;
     }
 
@@ -37,15 +37,15 @@ public class Planet extends Sun
     /** 
      * @param angle
      */
-    public void setAngle(int angle) {
+    public void setAngle(double angle) {
         this.angle = angle;
     }
 
     
     /** 
-     * @return int
+     * @return double
      */
-    public int getDistance() {
+    public double getDistance() {
         return distance;
     }
 
@@ -53,7 +53,7 @@ public class Planet extends Sun
     /** 
      * @param distance
      */
-    public void setDistance(int distance) {
+    public void setDistance(double distance) {
         this.distance = distance;
     }
 }

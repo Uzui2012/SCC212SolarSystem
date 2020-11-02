@@ -129,7 +129,7 @@ public class SolarSystem extends JFrame
 
 		synchronized (this)
 		{
-			if (things.size() > 1000)
+			if (things.size() > 10000)
 			{
 				System.out.println("\n\n");
 				System.out.println(" ********************************************************* ");
@@ -181,7 +181,7 @@ public class SolarSystem extends JFrame
 
 		synchronized (this)
 		{
-			if (things.size() > 1000)
+			if (things.size() > 10000)
 			{
 				System.out.println("\n\n");
 				System.out.println(" ********************************************************* ");
